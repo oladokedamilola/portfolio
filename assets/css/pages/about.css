@@ -1,0 +1,102 @@
+/* ===== PAGES/ABOUT.CSS - ABOUT PAGE SPECIFIC ===== */
+
+/* Stats Section */
+.stats-section {
+    padding: 80px 0;
+    background: rgba(10, 10, 10, 0.5);
+}
+
+/* Skills Highlights Grid */
+.skills-highlights-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.skill-highlight-card {
+    padding: 2.5rem 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 280px;
+}
+
+/* Bullet List for About */
+.about-bullets {
+    list-style: none;
+    margin: 1.5rem 0;
+}
+
+.about-bullets li {
+    margin-bottom: 0.75rem;
+    color: var(--gray-300);
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+
+.about-bullets li i {
+    color: var(--orange);
+    width: 20px;
+}
+
+.about-bullets li strong {
+    color: var(--text);
+    min-width: 100px;
+}
+
+/* How I Work Box (About Page Specific) */
+.how-i-work-box {
+    background: rgba(255, 94, 0, 0.05);
+    border-left: 3px solid var(--orange);
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 0.5rem;
+}
+
+.how-i-work-box p {
+    margin: 0;
+    color: var(--light-gray);
+}
+
+/* Availability Badge */
+.availability-badge {
+    display: inline-block;
+    background: rgba(16, 185, 129, 0.15);
+    color: var(--green);
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+    border: 1px solid rgba(16, 185, 129, 0.3);
+    margin-top: 1rem;
+}
+
+@media (max-width: 1024px) {
+    .skills-highlights-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .skills-highlights-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .skill-highlight-card {
+        min-height: auto;
+        padding: 2rem 1.5rem;
+    }
+    
+    .about-bullets li {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.25rem;
+    }
+    
+    .about-bullets li strong {
+        min-width: auto;
+    }
+}

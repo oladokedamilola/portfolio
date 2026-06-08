@@ -1,0 +1,362 @@
+/* ===== COMPONENTS.CSS - BUTTONS, CARDS, BADGES, TAGS ===== */
+
+/* Buttons */
+.btn {
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-primary {
+    background: linear-gradient(45deg, var(--orange), var(--secondary));
+    color: white;
+    box-shadow: 0 0 30px rgba(255, 94, 0, 0.5);
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 30px rgba(255, 94, 0, 0.6);
+}
+
+.btn-secondary {
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--text);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    transform: translateY(-2px);
+    border-color: var(--text);
+}
+
+.btn-outline {
+    background: transparent;
+    color: var(--text);
+    border: 2px solid var(--border);
+}
+
+.btn-outline:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+    border-color: var(--text);
+}
+
+.btn-green {
+    background: var(--green);
+    color: white;
+    border: none;
+    box-shadow: 0 0 20px rgba(16, 185, 129, 0.3);
+}
+
+.btn-green:hover {
+    background: #059669;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(16, 185, 129, 0.4);
+}
+
+.btn-center {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+/* CTA Buttons Group */
+.cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Cards */
+.service-card, .skill-card, .feature-card, .portfolio-card,
+.project-card, .tech-card, .contact-card, .social-card,
+.skill-highlight-card {
+    transition: all 0.3s ease;
+    border: 1px solid var(--border);
+}
+
+.service-card:hover, .skill-card:hover, .feature-card:hover,
+.portfolio-card:hover, .project-card:hover, .tech-card:hover,
+.contact-card:hover, .social-card:hover, .skill-highlight-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--orange);
+    box-shadow: 0 20px 40px rgba(255, 94, 0, 0.15);
+}
+
+/* Card Icons */
+.service-icon, .skill-icon, .feature-icon, .tech-icon,
+.contact-icon, .social-icon, .skill-icon {
+    width: 80px;
+    height: 80px;
+    background: rgba(255, 94, 0, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+}
+
+.service-icon i, .skill-icon i, .feature-icon i,
+.tech-icon i, .contact-icon i, .social-icon i {
+    font-size: 2rem;
+    color: var(--orange);
+}
+
+/* Card Headings */
+.service-card h3, .skill-card h3, .feature-card h3,
+.tech-card h3, .contact-card h3, .social-card h3,
+.skill-highlight-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: var(--text);
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+/* Card Text */
+.service-card p, .skill-card p, .tech-card p,
+.contact-card p, .social-card p, .skill-highlight-card p {
+    color: var(--gray-300);
+    line-height: 1.6;
+}
+
+/* Tech Tags */
+.tech-tag {
+    background: rgba(255, 94, 0, 0.15);
+    color: var(--orange);
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    border: 1px solid rgba(255, 94, 0, 0.3);
+}
+
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Skill Progress Bars */
+.skill-progress {
+    background: var(--gray-800);
+    border-radius: 1rem;
+    height: 8px;
+    margin-bottom: 0.5rem;
+    overflow: hidden;
+}
+
+.skill-progress-bar {
+    background: linear-gradient(135deg, var(--orange), var(--secondary));
+    height: 100%;
+    border-radius: 1rem;
+    transition: width 0.8s ease-in-out;
+}
+
+.skill-level {
+    color: var(--orange);
+    font-weight: 600;
+    font-size: 0.9rem;
+    display: block;
+    text-align: center;
+}
+
+/* Project Links */
+.project-link {
+    color: var(--orange);
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.project-link:hover {
+    gap: 0.75rem;
+    color: var(--secondary);
+}
+
+/* Contact Links */
+.contact-link {
+    color: var(--orange);
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.contact-link:hover {
+    color: var(--secondary);
+}
+
+/* View Gallery Button */
+.view-gallery-btn {
+    background: rgba(255, 94, 0, 0.9);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.view-gallery-btn:hover {
+    background: var(--orange);
+    transform: translateY(-2px);
+}
+
+/* Floating Action Buttons */
+.floating-cv {
+    position: fixed;
+    bottom: 2rem;
+    left: 2rem;
+    background: linear-gradient(135deg, var(--orange), var(--secondary));
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    z-index: 100;
+    box-shadow: 0 4px 20px rgba(255, 94, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.floating-cv:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 8px 25px rgba(255, 94, 0, 0.5);
+}
+
+.floating-whatsapp {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background: var(--green);
+    color: white;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    z-index: 100;
+    box-shadow: 0 4px 20px rgba(16, 185, 129, 0.3);
+    transition: all 0.3s ease;
+}
+
+.floating-whatsapp:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 8px 25px rgba(16, 185, 129, 0.5);
+}
+
+@media (max-width: 768px) {
+    .floating-cv, .floating-whatsapp {
+        width: 45px;
+        height: 45px;
+        font-size: 1.2rem;
+    }
+    .floating-cv { bottom: 1rem; left: 1rem; }
+    .floating-whatsapp { bottom: 1rem; right: 1rem; }
+}
+
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background: linear-gradient(135deg, var(--orange), var(--secondary));
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+    z-index: 100;
+    box-shadow: 0 4px 20px rgba(255, 94, 0, 0.3);
+}
+
+.back-to-top.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.back-to-top:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(255, 94, 0, 0.5);
+}
+
+/* Scroll Progress */
+.scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: linear-gradient(90deg, var(--orange), var(--secondary));
+    z-index: 1000;
+    transition: width 0.1s ease;
+}
+
+/* ===== DARK MODE DROPDOWN FIX ===== */
+.form-select {
+    width: 100%;
+    padding: 0.875rem 1rem;
+    background: rgba(10, 10, 10, 0.9);
+    border: 1px solid var(--border);
+    border-radius: 0.5rem;
+    color: var(--text);
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23FF5E00'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1.25rem;
+}
+
+.form-select option {
+    background: var(--deep-blue);
+    color: var(--text);
+    padding: 0.75rem;
+}
+
+.form-select option:checked {
+    background: var(--orange);
+    color: white;
+}
+
+.form-select:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 94, 0, 0.4);
+}
+
+.form-select:focus {
+    outline: none;
+    border-color: var(--orange);
+    box-shadow: 0 0 0 3px rgba(255, 94, 0, 0.15);
+}
